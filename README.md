@@ -2,7 +2,7 @@
 
 Ein Muster für **KI-first-Planung**: Plan, TODOs, Entscheidungen und offene Fragen eines Projekts liegen in einem eigenen Git-Repo und werden von KI-Agenten (Claude Code, Codex, …) gepflegt, nicht in Jira oder auf einem Kanban-Board.
 
-![Informationsfluss: PLAN wird zu TODO, die Umsetzung erzeugt Q-x, K-x und F-x, aus Q-x und K-x werden D-x](docs/informationsfluss.svg)
+![Code-Repo repo und Planungs-Repo repo-aidocs, gepflegt von KI-Agenten](docs/repos.svg)
 
 Dieses Repo ist keine Vorlage zum Kopieren. Es beschreibt das Konzept so, dass ein Agent es auf ein bestehendes Projekt übertragen und dabei anpassen kann.
 
@@ -22,6 +22,8 @@ Der Agent analysiert das Repo, stellt Rückfragen (z. B. wo das Planungs-Repo li
 - **Alle sind automatisch auf dem aktuellen Stand.** Agenten committen und pushen jede Änderung sofort, und jede Session holt den neuesten Stand. Das ganze Team und alle Agenten arbeiten mit derselben Planung.
 
 ## Workflow
+
+![Informationsfluss: PLAN wird zu TODO, die Umsetzung erzeugt Q-x, K-x und F-x, aus Q-x und K-x werden D-x](docs/informationsfluss.svg)
 
 **Initiale Planung**
 
@@ -56,6 +58,7 @@ Variante ohne Code-Repo: Für reine Planungs- oder Prüfprojekte (z. B. Sicherhe
 | [ANLEITUNG.md](ANLEITUNG.md) | Anleitung für den Agenten: Konzept, Rückfragen, Einrichtungsschritte |
 | [vorlage/aidocs-repo/](vorlage/aidocs-repo/) | Beispiel-Dateien für das Planungs-Repo (README mit Agentenregeln, PLAN, TODO, DECISIONS, QUESTIONS, FINDINGS) |
 | [vorlage/code-repo/](vorlage/code-repo/) | Beispiel-Dateien für das Code-Repo (Sync-Skript, Abschnitt für CLAUDE.md/AGENTS.md, Claude-Hook) |
+| [docs/repos.svg](docs/repos.svg) | Diagramm Code-Repo und Planungs-Repo |
 | [docs/informationsfluss.svg](docs/informationsfluss.svg) | Diagramm zum Informationsfluss |
 
 ## Alternativen
