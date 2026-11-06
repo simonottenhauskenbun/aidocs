@@ -14,12 +14,15 @@ Im Projekt, das das Muster bekommen soll, dem Agenten sagen:
 
 Der Agent analysiert das Repo, stellt Rückfragen (z. B. wo das Planungs-Repo liegen soll, welche Dokumente gebraucht werden) und richtet alles ein. Die Dateien unter [vorlage/](vorlage/) dienen ihm als Referenz, nicht als feste Struktur.
 
+Der Prozess wurde mit Claude Opus 5.5 bereits in mehreren Repos und Projekten getestet.
+
 ## Vorteile
 
 - **Man muss nicht jede Agenten-Antwort lesen.** In langen Antworten verstecken sich oft Sätze wie „Was du wissen solltest: …“ oder „Ich habe entschieden: …“. Hier landen sie als Q-x, K-x oder F-x in Dateien, und der Agent nennt nach jedem Schritt eine kurze Liste der neuen Einträge.
 - **Jederzeit eine neue Session starten.** Nichts hängt am Verlauf einer alten Session. Plan, Stand, Entscheidungen und offene Fragen stehen im Repo; man muss nicht in alten Sessions nach Informationen suchen.
 - **Verboser Agenten-Output ist vom Code getrennt.** Pläne, Abwägungen, Erklärungen und Erkenntnisse der Agenten landen im Planungs-Repo, nicht als lange Kommentare, Notiz-Dateien oder Commit-Texte im Code-Repo. Code und Code-Historie bleiben schlank, und das Planungs-Repo kann privat bleiben, auch wenn der Code öffentlich ist.
 - **Alle sind automatisch auf dem aktuellen Stand.** Agenten committen und pushen jede Änderung sofort, und jede Session holt den neuesten Stand. Das ganze Team und alle Agenten arbeiten mit derselben Planung.
+- **Der Prozess lässt sich jederzeit anpassen.** Die Struktur ist nicht fest vorgegeben, sondern steht als Text im Repo. Neue Benennungsschemata (z. B. R-x für Risiken) oder neue Informationsflüsse (z. B. Erkenntnisse, die automatisch in eine Doku wandern) lassen sich ergänzen, indem man den Agenten bittet, die Regeln entsprechend zu ändern.
 
 ## Workflow
 
