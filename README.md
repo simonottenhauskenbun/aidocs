@@ -14,6 +14,13 @@ Im Projekt, das das Muster bekommen soll, dem Agenten sagen:
 
 Der Agent analysiert das Repo, stellt Rückfragen (z. B. wo das Planungs-Repo liegen soll, welche Dokumente gebraucht werden) und richtet alles ein. Die Dateien unter [vorlage/](vorlage/) dienen ihm als Referenz, nicht als feste Struktur.
 
+## Voraussetzungen
+
+- **Git** mit Schreibzugriff auf Code-Repo und Planungs-Repo, ohne interaktive Passwortabfrage (SSH-Key oder Credential Manager), da der Agent selbständig pusht.
+- **Python 3** (nur Standardbibliothek) für das Sync-Skript. Nicht nötig bei einem eigenständigen Planungs-Repo ohne Code-Repo.
+- **Ein KI-Agent mit Shell-Zugriff**, z. B. Claude Code oder Codex.
+- *Optional:* [gh CLI](https://cli.github.com/), damit der Agent das Planungs-Repo `<repo>-aidocs` selbst anlegen kann. Ohne gh legt man es manuell an.
+
 Der Prozess wurde mit Claude Opus 5.5 bereits in mehreren Repos und Projekten getestet.
 
 ## Vorteile

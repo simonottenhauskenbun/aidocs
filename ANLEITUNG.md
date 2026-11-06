@@ -49,7 +49,7 @@ Frag den User nur, was du nicht selbst klären kannst, gebündelt in einer Runde
 
 ### Variante A: Planungs-Repo neben einem Code-Repo
 
-1. **Planungs-Repo anlegen** (nach Rückfrage), z. B. mit `gh repo create <owner>/<name>-aidocs --private`, und als `./.aidocs/` klonen.
+1. **Planungs-Repo anlegen** (nach Rückfrage), z. B. mit `gh repo create <owner>/<name>-aidocs --private`, und als `./.aidocs/` klonen. Ist die gh CLI nicht installiert oder nicht angemeldet, den User bitten, das Repo manuell anzulegen (z. B. im Web-UI), und danach klonen.
 2. **Startdateien** in `.aidocs/` anlegen, angelehnt an [vorlage/aidocs-repo/](vorlage/aidocs-repo/):
    - `README.md` mit Zweck, Einbindung, Inhaltstabelle und **Agentenregeln**. Die Agentenregeln stehen im Planungs-Repo, damit sie für jeden Agenten gelten, der dort arbeitet.
    - `TODO.md`, `DECISIONS.md`, `QUESTIONS.md` und was in Schritt 3 vereinbart wurde (z. B. `PLAN.md`, `FINDINGS.md`). Bestehende Planung aus dem Code-Repo übernehmen.
