@@ -1,6 +1,6 @@
 # <projekt>-aidocs
 
-Planungsdokumente für [<projekt>](<url-zum-code-repo>). Die Planung läuft AI-first statt über Jira/Kanban: Dieses Repo wird vollständig von KI-Agenten gepflegt.
+Planungsdokumente für [<projekt>](<url-zum-code-repo>). Die Planung läuft als AI-driven planning statt über Jira/Kanban: Dieses Repo wird vollständig von KI-Agenten gepflegt.
 
 ## Einbindung
 

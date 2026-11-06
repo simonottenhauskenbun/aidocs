@@ -1,6 +1,6 @@
 # .aidocs
 
-Ein Muster für **KI-first-Planung**: Plan, TODOs, Entscheidungen und offene Fragen eines Projekts liegen in einem eigenen Git-Repo und werden von KI-Agenten (Claude Code, Codex, …) gepflegt, nicht in Jira oder auf einem Kanban-Board.
+Ein Muster für **AI-driven planning**: Plan, TODOs, Entscheidungen und offene Fragen eines Projekts liegen in einem eigenen Git-Repo und werden von KI-Agenten (Claude Code, Codex, …) gepflegt, nicht in Jira oder auf einem Kanban-Board.
 
 ![Code-Repo repo und Planungs-Repo repo-aidocs, gepflegt von KI-Agenten](docs/repos.svg)
 
